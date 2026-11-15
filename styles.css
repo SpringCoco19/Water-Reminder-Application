@@ -85,7 +85,19 @@ select {
     display: block;
 }
 
-/* TIMER SCREEN */
+/* CAT DRINKING WATERGIF */
+.cat-gif {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+/* TIMER BACKGROUND */
 #timerScreen {
     position: relative;
     width: 100%;
@@ -112,7 +124,7 @@ select {
     font-family: "Pixeboy", sans-serif;
     font-size: 17.5px;
     font-weight: normal;
-    margin-top: 10.5px;
+    margin-top: 7px;
 }
 
 /* TIMER DISPLAY AND BUTTONS */
@@ -122,26 +134,67 @@ select {
     z-index: 2;
 }
 
-/* TIMER START BUTTON */
-#timerScreen button#startButton {
-    display: block;
-    margin: 20px auto;
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    appearance: none;
-    -webkit-appearance: none;
+/* TIMER PAGE START BUTTON */
+#timerScreen #startButton {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    top: 168px;
+    left: 30%;
+    transform: translateX(-50%);
+    padding: 0;
+    background: transparent;
+    border: none;
     cursor: pointer;
     -webkit-app-region: no-drag;
 }
 
-#timerScreen button#startButton img {
-    display: block;
-    width: 180px;
+#timerScreen #startButton img {
+    width: 100%;
     height: auto;
+    display: block;
+}
+
+/* TIMER PAGE RESET BUTTON */
+#timerScreen #resetButton {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    top: 168px;
+    left: 70%;
+    transform: translateX(-50%);
+    padding: 0;
     background: transparent;
     border: none;
-    outline: none;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
 }
+
+#timerScreen #resetButton img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TIMER NUMBERS */
+#timer {
+    font-family: "Pixeboy", sans-serif;
+    font-size: 42.5px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: -10px
+}
+
+
+/* WATER BOTTLE GIF */
+.water-gif {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+

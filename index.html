@@ -1,4 +1,4 @@
-
+<!-- This is an HTML comment -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +18,14 @@
              src="assets/background.png"
              alt="Home Background">
 
+        <!-- CAT DRINKING WATER GIF -->
+        <img class="cat-gif"
+             src="assets/Kawaii Cat Drinking Water Animation.gif"
+             alt="Cat animation">
+
         <p>Water Reminder App</p>
 
-        <!-- START BUTTON -->
+        <!-- HOME START BUTTON -->
         <button id="openTimer" class="image-button">
             <img src="assets/StartTimer.png" alt="Start Timer">
         </button>
@@ -31,24 +36,50 @@
     <!-- TIMER SCREEN -->
     <div id="timerScreen" style="display: none;">
 
+        <!-- TIMER SOUND -->
+        <audio id="timerSound"
+               src="assets/mixkit-bell-tick-tock-timer-1046.mp3">
+        </audio>
+
         <!-- TIMER BACKGROUND -->
         <img class="timer-background"
              src="assets/background.png"
              alt="Timer Background">
 
+        <!-- TIMER TITLE -->
         <h2>Water Timer 💧</h2>
 
-        <div id="timer">39:00</div>
+        <!-- TIMER DISPLAY -->
+        <div id="timer">00:10</div>
 
-        <button id="startButton">START</button>
+        <!-- TIMER START BUTTON -->
+        <button id="startButton" class="timer-image-button">
+            <img src="assets/Start Button.png" alt="Start">
+        </button>
 
-        <button id="resetButton">RESET</button>
+        <!-- TIMER RESET BUTTON -->
+        <button id="resetButton" class="timer-image-button">
+            <img src="assets/Reset Button.png" alt="Reset">
+        </button>
+
+        <!-- WORKING CAT GIF -->
+    <img id="workingCat"
+     src="assets/Pixel Cat Typing Animation Grid (1).gif"
+     alt="Cat working on computer"
+     class="cat-gif">
+
+    <!-- BREAK CAT GIF -->
+    <img id="breakCat"
+     src="assets/Kawaii Cat Drinking Water Animation.gif"
+     alt="Cat drinking water"
+     class="cat-gif"
+     style="display: none;">
 
     </div>
-
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
 </html>
+

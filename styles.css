@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* PIXEBOY FONT */
+@font-face {
+    font-family: "Pixeboy";
+    src: url("assets/Pixeboy.ttf") format("truetype");
+}
+
+/* GENERAL STYLING */
+body {
+    font-family: "Pixeboy", sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.app {
+    padding: 16px;
+}
+
+button,
+input,
+textarea,
+select {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+}
+
+/* HOME SCREEN */
+#homeScreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* HOME TITLE */
+#homeScreen p {
+    position: relative;
+    z-index: 2;
+    margin-left: 20px;
+    font-family: "Pixeboy", sans-serif;
+    font-size: 17.5px;
+}
+
+/* HOME START BUTTON */
+#homeScreen .image-button {
+    position: absolute;
+    z-index: 2;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+#homeScreen .image-button img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* TIMER SCREEN */
+#timerScreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.timer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* TIMER TITLE */
+#timerScreen h2 {
+    position: relative;
+    z-index: 2;
+    margin-left: 20px;
+    font-family: "Pixeboy", sans-serif;
+    font-size: 17.5px;
+    font-weight: normal;
+    margin-top: 10.5px;
+}
+
+/* TIMER DISPLAY AND BUTTONS */
+#timerScreen div,
+#timerScreen button {
+    position: relative;
+    z-index: 2;
+}
+
+/* TIMER START BUTTON */
+#timerScreen button#startButton {
+    display: block;
+    margin: 20px auto;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+#timerScreen button#startButton img {
+    display: block;
+    width: 180px;
+    height: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+}
